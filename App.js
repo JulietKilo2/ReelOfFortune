@@ -164,7 +164,10 @@ const runDebugFirst = () => {
         let firstBottomNr = symbols.indexOf(debugValues.symbols[0]);
         let firstCenterNr = firstBottomNr - 1;
         let firstTopNr = firstCenterNr - 1;
-        if (firstTopNr <= -1) {
+        if (firstTopNr === -1) {
+            firstTopNr = symbols.length - 1
+        }
+        if (firstTopNr <= -2) {
             firstTopNr = symbols.length - 2
         }
         if (firstCenterNr === -1) {
@@ -174,11 +177,11 @@ const runDebugFirst = () => {
         if (firstTopNr > symbols.length - 1) {
             firstTopNr = 0;
         }
-        firstCenterNr = firstTopNr + 1;
+
         if (firstCenterNr > symbols.length - 1) {
             firstCenterNr = 0;
         }
-        firstBottomNr = firstCenterNr + 1;
+
         if (firstBottomNr > symbols.length - 1) {
             firstBottomNr = 0;
         }
@@ -250,7 +253,10 @@ const runDebugSecond = () => {
         let secondBottomNr = symbols.indexOf(debugValues.symbols[1]);
         let secondCenterNr = secondBottomNr - 1;
         let secondTopNr = secondCenterNr - 1;
-        if (secondTopNr <= -1) {
+        if (secondTopNr === -1) {
+            secondTopNr = symbols.length - 1
+        }
+        if (secondTopNr <= -2) {
             secondTopNr = symbols.length - 2
         }
         if (secondCenterNr === -1) {
@@ -260,11 +266,11 @@ const runDebugSecond = () => {
         if (secondTopNr > symbols.length - 1) {
             secondTopNr = 0;
         }
-        secondCenterNr = secondTopNr + 1;
+
         if (secondCenterNr > symbols.length - 1) {
             secondCenterNr = 0;
         }
-        secondBottomNr = secondCenterNr + 1;
+
         if (secondBottomNr > symbols.length - 1) {
             secondBottomNr = 0;
         }
@@ -337,7 +343,10 @@ const runDebugThird = () => {
         let thirdCenterNr = thirdBottomNr - 1;
         let thirdTopNr = thirdCenterNr - 1;
 
-        if (thirdTopNr <= -1) {
+        if (thirdTopNr === -1) {
+            thirdTopNr = symbols.length - 1
+        }
+        if (thirdTopNr <= -2) {
             thirdTopNr = symbols.length - 2
         }
         if (thirdCenterNr === -1) {
@@ -347,11 +356,11 @@ const runDebugThird = () => {
         if (thirdTopNr > symbols.length - 1) {
             thirdTopNr = 0;
         }
-        thirdCenterNr = thirdTopNr + 1;
+
         if (thirdCenterNr > symbols.length - 1) {
             thirdCenterNr = 0;
         }
-        thirdBottomNr = thirdCenterNr + 1;
+
         if (thirdBottomNr > symbols.length - 1) {
             thirdBottomNr = 0;
         }
