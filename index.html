@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reel</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Reel-of-Fortune</h1>
+        <div class="reels-container">
+            <div class="reels">
+                <div class="payline">
+                    Payline
+                </div>
+                <div class="reels-first-column">
+                    <div class="reel first-top" data-index=""></div>
+                    <div class="reel first-center" data-index=""></div>
+                    <div class="reel first-bottom" data-index=""></div>
+                </div>
+                <div class="reels-second-column">
+                    <div class="reel second-top" data-index=""></div>
+                    <div class="reel second-center" data-index=""></div>
+                    <div class="reel second-bottom" data-index=""></div>
+                </div>
+                <div class="reels-third-column">
+                    <div class="reel third-top" data-index=""></div>
+                    <div class="reel third-center" data-index=""></div>
+                    <div class="reel third-bottom" data-index=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="pay-table-container">
+            <h3>pay table</h3>
+            <ul>
+                <li>3 CHERRY symbols on top line 2000</li>
+                <li>3 CHERRY symbols on center line 1000</li>
+                <li>3 CHERRY symbols on bottom line 4000</li>
+                <li>3 7 symbols on any line 150</li>
+                <li>Any combination of CHERRY and 7 on any line 75</li>
+                <li>3 3xBAR symbols on any line 50</li>
+                <li>3 2xBAR symbols on any line 20</li>
+                <li>3 BAR symbols on any line 10</li>
+                <li>Combination of any BAR symbols on any line 5</li>
+            </ul>
+        </div>
+        <div class="balance-indicator-container">
+            <h3>balance</h3>
+            <p>Current balance: <span id="balance-current"></span></p>
+            <input id="balance-input" type="number" max="5000" min="0">
+            <button id="balance-submit">change balance</button>
+        </div>
+        <div class="spin-btn-container">
+            <button class="spin-btn">spin</button>
+        </div>
+        <div class="debug-area-container">
+            <h3>debug area</h3>
+            <div class="debug-area">
+                <button class="debug-btn">enter debug Mode</button>
+                <span class="debug-alarm">Debug options saved</span>
+
+                <form>
+                    <label for="position">Position</label>
+                    <select name="position" id="debug-position">
+                        <option value="Top">Top</option>
+                        <option value="Center">Center</option>
+                        <option value="Bottom">Bottom</option>
+                    </select>
+                    <label for="symbols">Symbols</label>
+                    <select name="symbols" id="debug-symbols-first">
+                        <option value="3xBAR">3xBAR</option>
+                        <option value="BAR">BAR</option>
+                        <option value="2xBAR">2xBAR</option>
+                        <option value="7">7</option>
+                        <option value="Cherry">Cherry</option>
+                    </select>
+                    <select name="symbols" id="debug-symbols-second">
+                        <option value="3xBAR">3xBAR</option>
+                        <option value="BAR">BAR</option>
+                        <option value="2xBAR">2xBAR</option>
+                        <option value="7">7</option>
+                        <option value="Cherry">Cherry</option>
+                    </select>
+                    <select name="symbols" id="debug-symbols-third">
+                        <option value="3xBAR">3xBAR</option>
+                        <option value="BAR">BAR</option>
+                        <option value="2xBAR">2xBAR</option>
+                        <option value="7">7</option>
+                        <option value="Cherry">Cherry</option>
+                    </select>
+                    <button class="debug-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/App.js"></script>
+</body>
+
+</html>
